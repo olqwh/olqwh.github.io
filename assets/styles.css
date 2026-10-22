@@ -91,10 +91,11 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   background: var(--notice-bg);
   color: var(--notice-ink);
   border-bottom: 1px solid var(--notice-border);
-  font-size: 0.875rem;
-  line-height: 1.5;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  text-align: center;
 }
-.notice .wrap { padding-top: 0.6rem; padding-bottom: 0.6rem; }
+.notice .wrap { padding-top: 0.45rem; padding-bottom: 0.45rem; }
 .notice strong { font-weight: 700; }
 .notice a { color: inherit; }
 
@@ -104,21 +105,21 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   color: var(--header-ink);
   text-align: center;
 }
-.site-header .wrap { padding-top: 2.25rem; padding-bottom: 0; }
+.site-header .wrap { padding-top: 1.25rem; padding-bottom: 0; }
 .school {
   margin: 0;
   font-family: var(--sans);
-  font-size: 0.8125rem;
+  font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--header-muted);
 }
 .site-title {
-  margin: 0.35rem 0 0;
+  margin: 0.2rem 0 0;
   font-family: var(--serif);
   font-weight: 600;
-  font-size: clamp(2rem, 7vw, 2.75rem);
+  font-size: clamp(1.625rem, 6vw, 2.25rem);
   line-height: 1.15;
 }
 .site-title a { color: inherit; text-decoration: none; }
@@ -126,16 +127,16 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  margin: 0.9rem 0 0;
+  gap: 0.6rem;
+  margin: 0.35rem 0 0;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--motto);
 }
 .motto::before, .motto::after {
   content: "";
-  width: 2.5rem;
+  width: 1.75rem;
   height: 1px;
   background: currentColor;
   opacity: 0.6;
@@ -145,10 +146,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   display: flex;
   justify-content: center;
   gap: 0.25rem;
-  margin-top: 1.75rem;
+  margin-top: 0.75rem;
 }
 .nav a {
-  padding: 0.65rem 1rem;
+  padding: 0.55rem 0.9rem;
   color: var(--header-muted);
   text-decoration: none;
   font-weight: 600;
@@ -162,13 +163,13 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 /* Main */
-main { flex: 1; padding: 2.25rem 0 3rem; }
+main { flex: 1; padding: 1.75rem 0 2.5rem; }
 
 .page-heading {
-  margin: 0 0 1.25rem;
+  margin: 0 0 1rem;
   font-family: var(--serif);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 1.25;
 }
 
@@ -215,13 +216,13 @@ main { flex: 1; padding: 2.25rem 0 3rem; }
 
 .empty {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 1.75rem 1rem;
   border: 1px dashed var(--border);
   border-radius: 10px;
   color: var(--muted);
 }
-.empty-title { margin: 0; font-family: var(--serif); font-size: 1.25rem; color: var(--ink); }
-.empty-text { margin: 0.35rem 0 0; }
+.empty-title { margin: 0; font-size: 1rem; font-weight: 600; color: var(--ink); }
+.empty-text { margin: 0.2rem 0 0; font-size: 0.9375rem; }
 
 .search {
   display: block;
@@ -328,10 +329,11 @@ noscript p {
 .site-footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
-  font-size: 0.8125rem;
-  line-height: 1.55;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
 }
-.site-footer .wrap { padding-top: 1.5rem; padding-bottom: 2rem; }
-.site-footer p { margin: 0 0 0.6rem; }
+.site-footer .wrap { padding-top: 1rem; padding-bottom: 1.25rem; }
+.site-footer p { margin: 0 0 0.35rem; }
+.site-footer p:last-child { margin-bottom: 0; }
 .site-footer a { color: var(--muted); }
-.footer-motto { font-family: var(--serif); font-style: italic; color: var(--gold); }
